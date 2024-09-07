@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Academy Admission Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 60%;
+            margin: auto;
+            overflow: hidden;
+            padding: 2rem;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            margin-top: 0.5rem;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-row .form-group {
+            flex: 1;
+            margin-right: 1rem;
+        }
+        .form-row .form-group:last-child {
+            margin-right: 0;
+        }
+        .btn {
+            padding: 1rem;
+            margin-top: 2rem;
+            background: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .btn:hover {
+            background: #218838;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            .form-row {
+                flex-direction: column;
+            }
+            .form-row .form-group {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Marvel Academy Admission Form</h1>
+        <form action="#" method="POST">
+            <!-- Student Information -->
+            <div class="form-group">
+                <label for="studentName">Student's Full Name</label>
+                <input type="text" id="studentName" name="studentName" required>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="address">Home Address</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="section">Section</label>
+                    <select id="section" name="section" required>
+                        <option value="">Select Section</option>
+                        <option value="kindergarten">Kindergarten</option>
+                        <option value="nursery">Nursery</option>
+                        <option value="primary">Primary</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="class">Class</label>
+                    <select id="class" name="class" required>
+                        <option value="">Select Class</option>
+                        <!-- Options for classes can be added here -->
+                        <option value="kg1">KG 1</option>
+                        <option value="kg2">KG 2</option>
+                        <option value="nursery1">Nursery 1</option>
+                        <option value="nursery2">Nursery 2</option>
+                        <option value="primary1">Primary 1</option>
+                        <option value="primary2">Primary 2</option>
+                        <!-- Add more classes as needed -->
+                    </select>
+                </div>
+            </div>
+
+            <!-- Parent/Guardian Information -->
+            <h2>Parent/Guardian Information</h2>
+            <div class="form-group">
+                <label for="parentName">Parent/Guardian's Full Name</label>
+                <input type="text" id="parentName" name="parentName" required>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="parentPhone">Phone Number</label>
+                    <input type="tel" id="parentPhone" name="parentPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="parentEmail">Email Address</label>
+                    <input type="email" id="parentEmail" name="parentEmail" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="occupation">Occupation</label>
+                <input type="text" id="occupation" name="occupation" required>
+            </div>
+
+            <!-- Additional Information -->
+            <div class="form-group">
+                <label for="additionalInfo">Additional Information</label>
+                <textarea id="additionalInfo" name="additionalInfo" rows="4"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn">Submit Application</button>
+        </form>
+    </div>
+</body>
+</html>

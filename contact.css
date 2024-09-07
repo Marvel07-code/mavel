@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+h1, h2 {
+    text-align: center;
+}
+h2 {
+    margin-top: 30px;
+}
+.contact-info {
+    margin-top: 30px;
+}
+.contact-info p {
+    margin: 10px 0;
+}
+.contact-info a {
+    text-decoration: none;
+    color: green;
+}
+.office-hours {
+    margin-top: 20px;
+}
+.connect {
+    margin-top: 20px;
+    text-align: center;
+}
+.connect a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: green;
+}
+.contact-form {
+    margin-top: 30px;
+}
+.contact-form label, .contact-form input, .contact-form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-form input[type="submit"] {
+    background-color: green;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.location {
+    margin-top: 30px;
+    text-align: center;
+}
+.location a {
+    text-decoration: none;
+    color: green;
+}
